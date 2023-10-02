@@ -1,0 +1,26 @@
+### Add a new todo item
+POST http://127.0.0.1:5000/todos
+Content-Type: application/json
+
+{
+  "title": "Buy milk",
+  "is_completed": false
+}
+
+### Get all todo items
+GET http://127.0.0.1:5000/todos
+
+### Get a specific todo item by ID (change ID accordingly)
+GET http://127.0.0.1:5000/todos/1
+
+### Update a specific todo item by ID (change ID and fields accordingly)
+PUT http://127.0.0.1:5000/todos/1
+Content-Type: application/json
+
+{
+  "title": "Buy almond milk",
+  "is_completed": true
+}
+
+### Delete a specific todo item by ID (change ID accordingly)
+DELETE http://127.0.0.1:5000/todos/1
