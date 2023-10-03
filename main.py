@@ -47,7 +47,10 @@ def delete_todo(item_id):
         return jsonify({"message": "Item not found or not deleted"}), 404
 
 
-if __name__ == '__main__':
+def generate_testdata():
+    # Generate user
+    # TODO: Implement user generation
+
     # Generate todo items
     todo_dao.create_table()
     todo_dao.add_item(TodoItem(1, 'Buy milk', False))
@@ -55,4 +58,7 @@ if __name__ == '__main__':
     todo_dao.add_item(TodoItem(3, 'Buy bread', False))
     todo_dao.add_item(TodoItem(4, 'Buy butter', False))
 
+
+if __name__ == '__main__':
+    generate_testdata()
     app.run()
