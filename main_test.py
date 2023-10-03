@@ -1,20 +1,15 @@
 import unittest
 import json
-from main import app  # Importiere die Flask-App und DAOs aus deinem Modul
+from main import app, generate_testdata  # Importiere die Flask-App und DAOs aus deinem Modul
+
 
 class TestTodoAPI(unittest.TestCase):
-
 
     def setUp(self):
         self.app = app
         self.app.config['TESTING'] = True
         self.client = self.app.test_client()
-
-
-
-    def tearDown(self):
-        #os.remove(self.TEST_DB)
-        pass
+        generate_testdata()
 
     def login(self, username, password):
         return self.client.post('/login', json={'username': username, 'password': password})
