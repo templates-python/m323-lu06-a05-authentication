@@ -1,7 +1,7 @@
 import unittest
 import json
 from main import app  # Importiere die Flask-App und DAOs aus deinem Modul
-from userDao import UserDao
+
 class TestTodoAPI(unittest.TestCase):
 
 
