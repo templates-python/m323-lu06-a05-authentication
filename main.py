@@ -1,5 +1,10 @@
+"""Authentifizierung für die ToDo-Liste API mit Flask-Login.
+
+Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu06/aufgaben/auth
+"""
+
 from flask import Flask, jsonify, request
-from flask_login import LoginManager, login_required, login_user, logout_user, current_user
+from flask_login import LoginManager, login_required, login_user, logout_user
 
 from todo_item import TodoItem
 from user import User
