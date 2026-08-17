@@ -1,7 +1,7 @@
 {
   "files": [
-    "todoDao.py",
-    "todoItem.py",
+    "todo_dao.py",
+    "todo_item.py",
     "main.py"
   ],
   "ignore": [],

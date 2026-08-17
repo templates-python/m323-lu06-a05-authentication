@@ -4,8 +4,8 @@ Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu06/aufgaben/aut
 """
 
 from flask import Flask, jsonify, request
-from todoItem import TodoItem
-from todoDao import TodoDao
+from todo_item import TodoItem
+from todo_dao import TodoDao
 
 app = Flask(__name__)
 todo_dao = TodoDao('todo_example.db')
