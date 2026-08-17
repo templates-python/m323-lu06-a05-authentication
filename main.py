@@ -1,10 +1,10 @@
 from flask import Flask, jsonify, request
 from flask_login import LoginManager, login_required, login_user, logout_user, current_user
 
-from todoItem import TodoItem
+from todo_item import TodoItem
 from user import User
-from todoDao import TodoDao
-from userDao import UserDao
+from todo_dao import TodoDao
+from user_dao import UserDao
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'
